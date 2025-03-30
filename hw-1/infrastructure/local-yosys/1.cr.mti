@@ -1,0 +1,12 @@
+/homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys/your_design.v {1 {vlog -work work -stats=none /homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys/your_design.v
+Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module fa
+-- Compiling module main_adder
+-- Compiling module your_top_module
+-- Compiling module tb_main_adder
+
+Top level modules:
+	your_top_module
+	tb_main_adder
+
+} {} {}}

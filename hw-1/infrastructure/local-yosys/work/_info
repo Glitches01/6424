@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys
+vfa
+Z0 2/homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys/your_design.v
+Z1 !s110 1738788834
+!i10b 1
+!s100 V;a;V^deIlH40cnn?6`<Q0
+IjzD]6M;zH>l2f@X?dmk:o0
+Z2 d/homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys
+Z3 w1738003328
+Z4 8/homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys/your_design.v
+Z5 F/homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys/your_design.v
+!i122 1
+L0 2 11
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OP;L;2024.2;79
+r1
+!s85 0
+31
+Z8 !s108 1738788833.000000
+Z9 !s107 /homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys/your_design.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|/homes/user/stud/fall24/zy2665/courses/COMS6424/hw-1/infrastructure/local-yosys/your_design.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vISR
+2/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR.sv
+Z13 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 YT7db`K?6o?X5aK9JkQ^E1
+I0^zNQA^Sl_L;cSMM[EIMQ1
+S1
+R2
+w1738788656
+8/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR.sv
+F/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR.sv
+!i122 2
+L0 1 46
+R6
+R7
+r1
+!s85 0
+31
+!s108 1738788834.000000
+!s107 /homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR.sv|
+!i113 1
+Z14 o-work work -sv
+R12
+n@i@s@r
+vmain_adder
+R0
+R1
+!i10b 1
+!s100 Xll^_a`UE@FIiL5DXEGz=1
+I>]::h;=TnE;KeHJJ[YV;<2
+R2
+R3
+R4
+R5
+!i122 1
+L0 13 28
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtb_main_adder
+R0
+R1
+!i10b 1
+!s100 elg@P>OW]G[n8Kz4zBIec0
+ICbZXZ1KzZ_Fd6i1j8k]lD1
+R2
+R3
+R4
+R5
+!i122 1
+L0 101 54
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vtestbench
+2/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR_test.sv
+R13
+!s110 1738788942
+!i10b 1
+!s100 a6<2I]Z5k8ZETG=;z3lf23
+I[N;I^?9_TgC>4mEahA2AS3
+S1
+R2
+w1738788941
+8/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR_test.sv
+F/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR_test.sv
+!i122 3
+L0 6 41
+R6
+R7
+r1
+!s85 0
+31
+!s108 1738788942.000000
+!s107 /homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR_test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/homes/user/stud/fall24/zy2665/courses/4824/p2/source/ISR_test.sv|
+!i113 1
+R14
+R12
+vyour_top_module
+R0
+R1
+!i10b 1
+!s100 SjGQeOciIBT=<KDO:GUjX3
+IFM9]ZV6aI@^>eSRDYZX]43
+R2
+R3
+R4
+R5
+!i122 1
+L0 42 57
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
