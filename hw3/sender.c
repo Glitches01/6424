@@ -1,3 +1,4 @@
+
 # define _GNU_SOURCE
 # include <stdio.h>
 # include <stdint.h>
@@ -8,23 +9,23 @@
 # include <string.h>
 
 int main (void) {
-    printf ("[Sender] Starting up ...\n " ) ;
-    fflush ( stdout ) ;
+    printf ("[Sender] Starting up ...\n " );
+    fflush (stdout);
 
     // Load the real address from libc
-    void * handle = dlopen ( " libc . so .6 " , RTLD_LAZY ) ;
-    if (! handle ) {
-        fprintf ( stderr , " [ Sender ] dlopen failed \n " ) ;
-    return 1;
+    void * handle = dlopen("libc.so.6 " , RTLD_LAZY);
+    if (!handle) {
+        fprintf(stderr, "[Sender] dlopen failed \n " );
+        return 1;
     }
 
     // void * libc_fn = dlsym ( handle , " atoi ") ;
-    void * libc_fn = dlsym ( handle , " ecvt_r " ) ;
+    void *libc_fn = dlsym (handle , "ecvt_r") ;
 
 
 
-    if (! libc_fn ) {
-        fprintf ( stderr , " [ Sender ] dlsym failed \n " ) ;
+    if (!libc_fn ) {
+        fprintf (stderr , "[Sender] dlsym failed \n ") ;
         return 1;
     }
 
@@ -34,12 +35,6 @@ int main (void) {
     const char * msg = " ABCDEFGHIJKLMNOPQRSTUVWXYZ " ;
     size_t msg_len = strlen ( msg ) ;
 //}
-
-    printf ( " [ Sender ] libc address = % p \n " , libc_fn ) ;
-    fflush ( stdout ) ;
-    dlclose ( handle ) ;
-    const char * msg = " ABCDEFGHIJKLMNOPQRSTUVWXYZ " ;
-    size_t msg_len = strlen ( msg ) ;
     size_t num_bits = msg_len << 3;
     unsigned long bit_index = 0;
 
