@@ -56,7 +56,7 @@ int get_access_time(uint8_t* page)
 
 void detect_cached_page(int results[PAGE_NUM])
 {
-    int min_time = 10000000;
+    int min_time = 500;
     int cached_page_index = -1;
     for (int i = 0; i < PAGE_NUM; i++)
     {
@@ -114,19 +114,19 @@ uint8_t probe(uint8_t* target)
     return get_best_result(results);
 }
 
-char *secret = "Hello";
+char* secret = "Hello";
 
 int main()
 {
     memset(mem_pages, 1, sizeof(mem_pages));
 
-    int len = strlen(secret);
+    int len = strlen((char*)(secret));
 
     printf("secret = ");//sleep(1);
     
     for(int i = 0; i < len; i++)
     {
-        printf("%c", probe(&secret[i]));
+        printf("%c", probe((uint8_t*)&secret[i]));
     }
     printf("\n");
 }
