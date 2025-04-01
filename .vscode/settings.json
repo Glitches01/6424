@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "typeinfo": "cpp",
+        "string.h": "c",
+        "cstdio": "c",
+        "iostream": "c",
+        "ostream": "c",
+        "stdio.h": "c"
+    }
+}

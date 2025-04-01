@@ -16,7 +16,7 @@
 
 // A threshold cycles for deciding if it ’s a cache hit or miss
 // You MUST TUNE THIS for your CPU . Start with 100 cycles
-# define THRESHOLD_CYCLES 2250
+# define THRESHOLD_CYCLES 1000
 // Read timestamp counter
 static inline uint64_t rdtscp64 () {
     unsigned aux ;
@@ -43,17 +43,30 @@ int main (int argc , char * argv []) {
     uint64_t start , end ;
     int bitcnt = 0 , val = 0;
 
-    while (1) {
+    // while (1) 
+    for (int i = 0; i < 10000; i++)
+    {
         start = rdtscp64 () ;
         // int result = atoi ("1234567890") ;
         int s = ecvt_r ( pi , 20 , & decpt , & sign , buf , sizeof ( buf ) ) ;
         end = rdtscp64 () ;
         uint64_t t = end - start ;
-
-        int bit = ( t < threshold ) ? 1 : 0;
-        printf ("%d", bit ) ;
-        fflush ( stdout ) ;
+        printf("t: %d buf %s \n",t,buf);
+        int bit = (t < threshold) ? 1 : 0;
+        printf ("%d\n", bit) ;
+        fflush (stdout);
     }
+    // {
+    //     start = rdtscp64 () ;
+    //     // int result = atoi ("1234567890") ;
+    //     int s = ecvt_r ( pi , 20 , & decpt , & sign , buf , sizeof ( buf ) ) ;
+    //     end = rdtscp64 () ;
+    //     uint64_t t = end - start ;
+    //     printf("t: %d buf %s",t,buf);
+    //     int bit = ( t < threshold ) ? 1 : 0;
+    //     printf ("%d \n", bit ) ;
+    //     fflush ( stdout ) ;
+    // }
 
     return 0;
 }

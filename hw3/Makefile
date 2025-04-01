@@ -2,7 +2,7 @@
 	g++ -c $<
 
 %.f: %.o
-	g++ $< -o $@
+	g++ $< -o $@ -ldl
 
 %.run: %.f
 	./$<
@@ -10,4 +10,4 @@
 .INTERMEDIATE: %.o %.f
 
 clean:
-	rm -rf ./*.o
+	rm -rf ./*.o ./*.f
