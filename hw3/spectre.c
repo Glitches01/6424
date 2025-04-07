@@ -1,5 +1,9 @@
-//Build with Visual Studio command prompt: cl.exe spectre.c
-//Build with GCC: gcc spectre.c
+// ========================
+// Author: Zhenning Yang, Yangfan Wang
+// UNI: zy2665, yw4415
+// Date: 04/07/2025
+// ========================
+// sched_receiver.c
 
 #ifdef _MSC_VER
 #include <intrin.h>
@@ -132,7 +136,7 @@ uint8_t probe(uint8_t* target)
     return get_best_result(results);
 }
 
-char *secret = "HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA";//char pointer
+char *secret = "Side Channel Attacks";//char pointer
 
 int main()
 {
